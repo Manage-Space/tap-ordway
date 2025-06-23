@@ -85,6 +85,28 @@
 		},
 		"custom_fields": {
 			"type": ["null", "object"]
+		},
+		"product_tax_group_name": {
+			"type": ["null", "string"]
+		},
+		"transaction_posting_entries": {
+			"type": ["null", "array"],
+			"items": {
+				"type": "object",
+				"additionalProperties": false,
+				"required": ["transaction_type", "debit_account", "credit_account"],
+				"properties": {
+					"transaction_type": {
+						"type": "string"
+					},
+					"debit_account": {
+						"type": "string"
+					},
+					"credit_account": {
+						"type": "string"
+					}
+				}
+			}
 		}
 	}
 }
