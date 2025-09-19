@@ -63,6 +63,7 @@ class InvoiceTransformer(RecordTransformer):
                     "start_date": data.get("start_date"),
                     "end_date": data.get("end_date"),
                     "applied_tiers": invoice_line.get("applied_tiers"),
+                    "invoice_pdf_url": data.get("invoice_pdf_url"),
                     "custom_fields": data.get("custom_fields"),
                     "line_custom_fields": invoice_line.get("custom_fields"),
                     "updated_date": data.get("updated_date"),
